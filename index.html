@@ -1,23 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="mjHSsjLK9OKkJ3G5wPEDm06zTR15xcCkZAS_XpuYFFw" />
-    <title>BookMyMaid - Bhiwadi</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-        header { background: #0077cc; color: white; padding: 20px; text-align: center; }
-        section { padding: 20px; }
-        h2 { color: #0077cc; }
-        .maid-card { background: white; border-radius: 8px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    </style>
-</head>
-  
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>BookMyMaid Bhiwadi/Dharuhera</title>
-  <meta name="description" content="BookMyMaid Bhiwadi/Dharuhera — trusted maids in Bhiwadi & Dharuhera. Cleaning, cooking, babysitting & elderly care. Book quickly via form or WhatsApp." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="mjHSsjLK9OKkJ3G5wPEDm06zTR15xcCkZAS_XpuYFFw" />
+  <title>BookMyMaid - Bhiwadi/Dharuhera</title>
+  <meta name="description" content="BookMyMaid — trusted maids in Bhiwadi & Dharuhera. Cleaning, cooking, babysitting & elderly care. Book quickly via form or WhatsApp." />
   <meta name="theme-color" content="#0077cc" />
 
   <!-- Open Graph -->
@@ -39,70 +27,75 @@
   </script>
 
   <style>
-    :root{
+    :root {
       --accent:#0077cc;
       --muted:#5b6b76;
       --bg:#f6f8fa;
       --card:#ffffff;
       --radius:10px;
       --maxw:1100px;
-      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
       font-size:16px;
-      -webkit-font-smoothing:antialiased;
     }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:#0b1720;line-height:1.45}
-    .container{max-width:var(--maxw);margin:18px auto;padding:18px}
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:#0b1720; line-height:1.5; }
+    .container { max-width:var(--maxw); margin:18px auto; padding:18px; }
 
-    header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#2aa0e0);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
-    h1{font-size:18px;margin:0}
-    .sub{color:var(--muted);font-size:13px;margin-top:4px}
+    header { display:flex; align-items:center; justify-content:space-between; }
+    .brand { display:flex; align-items:center; gap:12px; }
+    .logo { width:48px; height:48px; border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),#2aa0e0);
+      display:flex; align-items:center; justify-content:center;
+      color:#fff; font-weight:700; font-size:18px; }
+    h1 { font-size:20px; margin:0; }
+    .sub { color:var(--muted); font-size:13px; margin-top:4px; }
 
-    nav{display:flex;gap:12px;align-items:center}
-    .nav a{color:var(--accent);text-decoration:none;font-weight:600;padding:8px;border-radius:8px}
-    .nav a:hover{background:rgba(0,119,204,0.06)}
+    nav { display:flex; gap:12px; align-items:center; }
+    .nav a { color:var(--accent); text-decoration:none; font-weight:600; padding:8px; border-radius:8px; }
+    .nav a:hover { background:rgba(0,119,204,0.08); }
 
-    .menu-toggle{display:none;border:0;background:transparent;font-size:18px}
+    .menu-toggle { display:none; font-size:22px; background:transparent; border:0; }
 
-    .hero{background:linear-gradient(90deg, rgba(0,119,204,0.06), rgba(42,160,224,0.02));padding:14px;border-radius:12px;margin-top:12px}
-    .hero h2{margin:0 0 6px 0;font-size:20px}
-    .cta{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
-    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700;border:0;cursor:pointer}
-    .btn.ghost{background:transparent;color:var(--accent);border:2px solid rgba(0,119,204,0.12)}
+    .hero { background:linear-gradient(90deg, rgba(0,119,204,0.06), rgba(42,160,224,0.02));
+      padding:18px; border-radius:12px; margin-top:14px; }
+    .hero h2 { margin-bottom:8px; font-size:22px; }
+    .cta { display:flex; gap:10px; margin-top:10px; flex-wrap:wrap; }
+    .btn { background:var(--accent); color:white; padding:10px 16px; border-radius:8px;
+      font-weight:700; text-decoration:none; border:0; cursor:pointer; }
+    .btn.ghost { background:transparent; color:var(--accent); border:2px solid var(--accent); }
 
-    .section-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:18px}
-    .maid-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:12px}
-    .card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 8px 20px rgba(9,13,16,0.04);display:flex;flex-direction:column;gap:8px}
-    .card img{width:100%;height:160px;object-fit:cover;border-radius:8px}
-    .meta{display:flex;justify-content:space-between;align-items:center;gap:8px}
-    .muted{color:var(--muted);font-size:13px}
-    .tag{background:#eef7ff;padding:6px 8px;border-radius:999px;font-size:13px;color:var(--accent);font-weight:600}
+    .section-title { display:flex; justify-content:space-between; align-items:center; margin-top:20px; }
+    .maid-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:14px; }
+    .card { background:var(--card); border-radius:12px; padding:12px;
+      box-shadow:0 4px 10px rgba(9,13,16,0.08); }
+    .card img { width:100%; height:180px; object-fit:cover; border-radius:8px; }
+    .meta { display:flex; justify-content:space-between; align-items:center; margin-top:6px; }
+    .muted { color:var(--muted); font-size:14px; }
+    .tag { background:#eef7ff; padding:4px 8px; border-radius:999px;
+      font-size:13px; color:var(--accent); font-weight:600; margin-right:4px; }
 
-    .form-wrap{background:var(--card);border-radius:12px;padding:12px;margin-top:18px;box-shadow:0 8px 20px rgba(9,13,16,0.04)}
-    .form-wrap iframe{width:100%;min-height:720px;border:0;border-radius:8px;display:block}
+    .form-wrap { background:var(--card); border-radius:12px; padding:18px; margin-top:20px;
+      box-shadow:0 4px 10px rgba(9,13,16,0.08); }
+    .form-wrap form, .form-wrap iframe { width:100%; border:0; }
 
-    .whatsapp{
-      position:fixed;right:18px;bottom:18px;background:#25D366;color:white;border-radius:999px;padding:12px 14px;display:flex;align-items:center;gap:10px;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,0.18);z-index:80;
-      font-weight:700;font-size:15px
-    }
-    .whatsapp svg{width:20px;height:20px;fill:white}
-
-    footer{margin-top:28px;padding:18px 0;color:var(--muted);font-size:14px;text-align:center}
-
-    @media (max-width:760px){
-      .logo{width:44px;height:44px}
-      h1{font-size:16px}
-      .menu-toggle{display:inline-block}
-      nav{display:none}
-      .hero h2{font-size:18px}
-      .card img{height:140px}
-      .form-wrap iframe{min-height:1100px}
-      .whatsapp{padding:10px 12px;font-size:14px}
+    .form-field { display:flex; flex-direction:column; margin-bottom:12px; }
+    .form-field label { font-weight:600; margin-bottom:6px; }
+    .form-field input, .form-field textarea, .form-field select {
+      padding:10px; border:1px solid #ccc; border-radius:6px; font-size:15px;
     }
 
-    a,button{outline-color:rgba(0,119,204,0.35)}
+    .whatsapp { position:fixed; right:18px; bottom:18px;
+      background:#25D366; color:white; border-radius:999px; padding:12px 14px;
+      display:flex; align-items:center; gap:8px; text-decoration:none;
+      box-shadow:0 6px 18px rgba(0,0,0,0.2); font-weight:700; font-size:15px; }
+
+    footer { margin-top:30px; padding:16px 0; color:var(--muted); font-size:14px; text-align:center; }
+
+    @media (max-width:760px) {
+      .menu-toggle { display:inline-block; }
+      nav { display:none; }
+      .card img { height:150px; }
+    }
   </style>
 </head>
 <body>
@@ -111,14 +104,13 @@
       <div class="brand">
         <div class="logo">BM</div>
         <div>
-          <h1>BookMyMaid Bhiwadi/Dharuhera</h1>
+          <h1>BookMyMaid</h1>
           <div class="sub">Trusted maids — cleaning, cooking, babysitting & more</div>
         </div>
       </div>
-
       <div>
-        <button class="menu-toggle" id="menuToggle" aria-controls="siteNav" aria-expanded="false">☰</button>
-        <nav id="siteNav" class="nav" aria-label="Main navigation">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav id="siteNav" class="nav">
           <a href="#home">Home</a>
           <a href="#maids">Maids</a>
           <a href="#booking">Book</a>
@@ -128,8 +120,9 @@
       </div>
     </header>
 
-    <section id="home" class="hero" aria-labelledby="heroTitle">
-      <h2 id="heroTitle">Book a maid in Bhiwadi/Dharuhera — fast, reliable & verified</h2>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <h2>Book a maid in Bhiwadi/Dharuhera — fast, reliable & verified</h2>
       <p class="muted">Choose a service below or use the booking form — we’ll confirm via WhatsApp.</p>
       <div class="cta">
         <a class="btn" href="#booking">Book Now</a>
@@ -137,87 +130,104 @@
       </div>
     </section>
 
-    <section id="maids" aria-labelledby="maidsTitle">
+    <!-- Maids -->
+    <section id="maids">
       <div class="section-title">
-        <h3 id="maidsTitle" style="margin:0">Available Maids</h3>
-        <div class="muted">Showing verified workers in Bhiwadi/Dharuhera</div>
+        <h3>Available Maids</h3>
+        <div class="muted">Verified workers in Bhiwadi/Dharuhera</div>
       </div>
-
-      <div class="maid-grid" role="list">
-        <article class="card" role="listitem">
-          <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=800&auto=format&fit=crop" alt="Sunita - cleaning & cooking" loading="lazy">
+      <div class="maid-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=600" alt="Sunita - cleaning & cooking">
           <div style="font-weight:700">Sunita Devi</div>
           <div class="muted">Central • Full-time • Rating 4.6</div>
           <div class="meta">
-            <div><span class="tag">Cleaning</span> <span class="tag">Cooking</span></div>
-            <div style="font-weight:800;color:var(--accent)">₹220/hr</div>
+            <div><span class="tag">Cleaning</span><span class="tag">Cooking</span></div>
+            <div style="font-weight:700;color:var(--accent)">₹220/hr</div>
           </div>
         </article>
-
-        <article class="card" role="listitem">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Asha - babysitting" loading="lazy">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600" alt="Asha - babysitting">
           <div style="font-weight:700">Asha Kumari</div>
           <div class="muted">North • Part-time • Rating 4.5</div>
           <div class="meta">
-            <div><span class="tag">Babysitting</span> <span class="tag">Cleaning</span></div>
-            <div style="font-weight:800;color:var(--accent)">₹200/hr</div>
+            <div><span class="tag">Babysitting</span><span class="tag">Cleaning</span></div>
+            <div style="font-weight:700;color:var(--accent)">₹200/hr</div>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="booking" class="form-wrap" aria-labelledby="bookingTitle">
-      <h3 id="bookingTitle" style="margin-top:0">Book a Maid</h3>
-      <p class="muted">Please fill the form below and we’ll contact you to confirm your booking.</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3FRITzr-GyF1qr5mTOkm_Rkl55-eetqahZI1aQe-gSNgyzg/viewform?embedded=true"
-              title="BookMyMaid booking form" loading="lazy" aria-label="Booking form"></iframe>
+    <!-- Booking -->
+    <section id="booking" class="form-wrap">
+      <h3>Book a Maid</h3>
+      <p class="muted">Fill this form and we’ll contact you to confirm your booking.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3FRITzr-GyF1qr5mTOkm_Rkl55-eetqahZI1aQe-gSNgyzg/viewform?embedded=true"></iframe>
     </section>
 
-    <section id="register" class="form-wrap" aria-labelledby="registerTitle">
-      <h3 id="registerTitle" style="margin-top:0">Maid Registration</h3>
-      <p class="muted">If you are a maid looking for work, please fill this form to register with us.</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdRUExs8iTV7uN_0iSXkqV_Sclo2aFrMH76Z16iGzNqbnf3lA/viewform?embedded=true"
-              title="Maid registration form" loading="lazy" aria-label="Registration form"></iframe>
+    <!-- Registration -->
+    <section id="register" class="form-wrap">
+      <h3>Maid Registration</h3>
+      <p class="muted">If you are a maid looking for work, fill the form below:</p>
+      <form action="https://formspree.io/f/mnnbbvve" method="POST" enctype="multipart/form-data">
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-field">
+          <label for="skills">Skills</label>
+          <select id="skills" name="skills[]" multiple required>
+            <option value="Cleaning">Cleaning</option>
+            <option value="Cooking">Cooking</option>
+            <option value="Babysitting">Babysitting</option>
+            <option value="Elderly Care">Elderly Care</option>
+          </select>
+          <small class="muted">Hold Ctrl (Windows) or ⌘ (Mac) to select multiple</small>
+        </div>
+        <div class="form-field">
+          <label for="photo">Upload Photo</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+        </div>
+        <button class="btn" type="submit">Register</button>
+      </form>
     </section>
 
+    <!-- Contact -->
     <section id="contact" style="margin-top:18px">
-      <h3 style="margin:0 0 8px 0">Contact</h3>
+      <h3>Contact</h3>
       <p class="muted">Phone / WhatsApp: <strong>+91 86074 79279</strong> — Email: <strong>priyasangu93@gmail.com</strong></p>
-      <p class="muted">Operating: Bhiwadi/Dharuhera (pilot area). For faster support, use the WhatsApp button at the bottom-right.</p>
+      <p class="muted">Operating: Bhiwadi/Dharuhera (pilot area). For faster support, use the WhatsApp button.</p>
     </section>
 
     <footer>
-      © <span id="year">2025</span> BookMyMaid Bhiwadi/Dharuhera.
+      © <span id="year">2025</span> BookMyMaid.
     </footer>
   </div>
 
-  <a class="whatsapp" href="https://wa.me/918607479279?text=Hi%20I%20want%20to%20book%20a%20maid" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M20.52 3.48A11.92 11.92 0 0012.01.01C5.413.01.31 5.113.31 11.71c0 1.98.52 3.92 1.5 5.63L.09 23l5.86-1.54A11.96 11.96 0 0012.01 23c6.6 0 11.7-5.104 11.7-11.7 0-3.12-1.22-6.05-3.19-8.82zM12 21.3c-1.6 0-3.15-.42-4.54-1.22l-.33-.2-3.48.91.94-3.4-.21-.35A9.3 9.3 0 012.7 11.71C2.7 6.6 6.9 2.4 12 2.4c4 0 7.3 2.6 8.48 6.1.95 2.8.02 5.86-2.4 8.01A9.29 9.29 0 0112 21.3z" />
-      <path d="M17.6 14.2c-.3-.15-1.8-.9-2.1-1-.3-.1-.5-.15-.7.15-.2.3-.8 1-.98 1.2-.2.2-.4.25-.7.1-.3-.15-1.2-.45-2.3-1.42-.85-.76-1.42-1.7-1.6-2-.17-.3 0-.45.13-.6.13-.13.3-.3.45-.45.15-.15.2-.3.3-.5.1-.2 0-.4 0-.6 0-.2-.7-1.7-.97-2.33-.26-.6-.53-.52-.7-.53l-.6-.01c-.2 0-.55.1-.84.5-.3.4-1.02 1-.1 2.56.92 1.6 2.65 3.34 5.1 4.55 2 .9 2.4 1.02 2.9 1.02.48 0 1-.4 1.2-.78.2-.38.2-.7.15-.78-.03-.08-.1-.12-.4-.27z"/>
-    </svg>
-    Chat
-  </a>
+  <!-- WhatsApp Button -->
+  <a class="whatsapp" href="https://wa.me/918607479279?text=Hi%20I%20want%20to%20book%20a%20maid" target="_blank">💬 Chat</a>
 
   <script>
+    // Mobile nav toggle
     const toggle = document.getElementById('menuToggle');
     const nav = document.getElementById('siteNav');
     toggle.addEventListener('click', ()=>{
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      if(nav.style.display === 'flex') nav.style.display = 'none';
-      else nav.style.display = 'flex';
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
       nav.style.flexDirection = 'column';
-      nav.style.gap = '8px';
       nav.style.position = 'absolute';
       nav.style.right = '18px';
       nav.style.top = '70px';
       nav.style.background = 'white';
       nav.style.padding = '12px';
       nav.style.borderRadius = '8px';
-      nav.style.boxShadow = '0 8px 20px rgba(9,13,16,0.12)';
+      nav.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
     });
 
+    // Year auto-update
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
